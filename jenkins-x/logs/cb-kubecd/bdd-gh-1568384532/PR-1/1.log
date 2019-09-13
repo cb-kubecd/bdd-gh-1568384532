@@ -1,0 +1,145 @@
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-7vhnc[0m
+{"level":"warn","ts":1568385415.7969236,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568385415.7976732,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-b9t4k[0m
+{"level":"warn","ts":1568385417.132714,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568385417.1347888,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-cb-kubecd-bdd-gh-156838453-bg8qc[0m
+{"level":"warn","ts":1568385423.2596445,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568385424.3497946,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/cb-kubecd/bdd-gh-1568384532.git @ ae07442adc41b6ce13a44d0f1be2b5a3149c28f5 in path /workspace/source"}
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:ae07442adc41b6ce13a44d0f1be2b5a3149c28f5,1:28493e4eae4bc3f435841311f1851b3b55380996
+DEBUG: ran git fetch --unshallow origin 28493e4eae4bc3f435841311f1851b3b55380996: ae07442adc41b6ce13a44d0f1be2b5a3149c28f5: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard ae07442adc41b6ce13a44d0f1be2b5a3149c28f5 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 28493e4eae4bc3f435841311f1851b3b55380996 in 
+Merged SHA 28493e4eae4bc3f435841311f1851b3b55380996 with commit message 'My first PR commit' into base branch master
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+DEBUG: ran git fetch origin 28493e4eae4bc3f435841311f1851b3b55380996: ae07442adc41b6ce13a44d0f1be2b5a3149c28f5: in 
+DEBUG: Unshallowed git repo in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard ae07442adc41b6ce13a44d0f1be2b5a3149c28f5 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 28493e4eae4bc3f435841311f1851b3b55380996 in 
+Merged SHA 28493e4eae4bc3f435841311f1851b3b55380996 with commit message 'My first PR commit' into base branch master
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision 55d20fe49dc9b3570aab896a5175ffa71b157494 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            55d20fe49dc9b3570aab896a5175ffa71b157494 -> FETCH_HEAD
+Effective pipeline written to jenkins-x-serverless-jenkins-effective.yml
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision 55d20fe49dc9b3570aab896a5175ffa71b157494 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            55d20fe49dc9b3570aab896a5175ffa71b157494 -> FETCH_HEAD
+PipelineActivity for cb-kubecd-bdd-gh-1568384532-PR-1-1
+Applying changes 
+upserted PipelineResource cb-kubecd-bdd-gh-1568384532-pr for the git repository https://github.com/cb-kubecd/bdd-gh-1568384532.git
+upserted Task cb-kubecd-bdd-gh-1568384532-pr-from-build-pack-1
+upserted Pipeline cb-kubecd-bdd-gh-1568384532-pr-1
+created PipelineRun cb-kubecd-bdd-gh-1568384532-pr-1
+created PipelineStructure cb-kubecd-bdd-gh-1568384532-pr-1
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-zdc2h[0m
+{"level":"warn","ts":1568385437.2695847,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568385437.2700837,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-blzv9[0m
+{"level":"warn","ts":1568385438.6680863,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568385438.669508,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/preview\""}
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-cb-kubecd-bdd-gh-1568384532-pr-75shb[0m
+{"level":"warn","ts":1568385444.7074666,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568385445.787185,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/cb-kubecd/bdd-gh-1568384532.git @ master in path /workspace/source"}
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:ae07442adc41b6ce13a44d0f1be2b5a3149c28f5,1:28493e4eae4bc3f435841311f1851b3b55380996
+DEBUG: ran git fetch --unshallow origin 28493e4eae4bc3f435841311f1851b3b55380996: ae07442adc41b6ce13a44d0f1be2b5a3149c28f5: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard ae07442adc41b6ce13a44d0f1be2b5a3149c28f5 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 28493e4eae4bc3f435841311f1851b3b55380996 in 
+Merged SHA 28493e4eae4bc3f435841311f1851b3b55380996 with commit message 'My first PR commit' into base branch master
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-make-linux[0m
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/bdd-gh-1568384532 main.go
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] No base image, nothing to extract            
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0000] EXPOSE 8080                                  
+[36mINFO[0m[0000] cmd: EXPOSE                                  
+[36mINFO[0m[0000] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] ENTRYPOINT ["/bdd-gh-1568384532"]            
+[36mINFO[0m[0000] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0000] Using files from context: [/workspace/source/bin] 
+[36mINFO[0m[0000] COPY ./bin/ /                                
+[36mINFO[0m[0000] Taking snapshot of files...                  
+2019/09/13 14:37:38 pushed blob: sha256:fc1c15a0dc1707254b8998c885238d5d96d569eb47277cb7e3915aa0dd158a25
+2019/09/13 14:37:39 pushed blob: sha256:30a8147921e47b4e1f58de50713528bbb4214b4cf763e9f9abdfce4ecd38802e
+2019/09/13 14:37:40 gcr.io/jenkins-x-bdd3/bdd-gh-1568384532:0.0.0-SNAPSHOT-PR-1-1: digest: sha256:fe0f1d64cf6ed33aee3e86bdf03a00be8ef32ba8e522705f7ee57a60d10e06ea size: 428
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mfrom-build-pack[0m and container [32mstep-postbuild-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-make-preview[0m
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-1-1/" Chart.yaml
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-1-1/" ../*/Chart.yaml
+sed -i -e "s|repository:.*|repository: gcr.io\/jenkins-x-bdd3\/bdd-gh-1568384532|" values.yaml
+sed -i -e "s/tag:.*/tag: 0.0.0-SNAPSHOT-PR-1-1/" values.yaml
+echo "  version: 0.0.0-SNAPSHOT-PR-1-1" >> requirements.yaml
+** step helm build
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+Showing logs for build [32mcb-kubecd-bdd-gh-1568384532-pr-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-preview[0m
+Creating a preview
+WARNING: No author for commit: 28493e4eae4bc3f435841311f1851b3b55380996
+Created environment cb-kubecd-bdd-gh-1568384532-pr-1
+Namespace **-cb-kubecd-bdd-gh-1568384532-pr-1 created 
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: 35.240.94.226.nip.io
+    exposer: Ingress
+    http: "true"
+preview:
+  image:
+    repository: gcr.io/jenkins-x-bdd3/bdd-gh-1568384532
+    tag: 0.0.0-SNAPSHOT-PR-1-1
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision 55d20fe49dc9b3570aab896a5175ffa71b157494 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            55d20fe49dc9b3570aab896a5175ffa71b157494 -> FETCH_HEAD
+
+
+Updating PipelineActivities cb-kubecd-bdd-gh-1568384532-pr-1-1 which has status Running
+WARNING: preview application http://bdd-gh-1568384532.**-cb-kubecd-bdd-gh-1568384532-pr-1.35.240.94.226.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 818.058174ms
+WARNING: preview application http://bdd-gh-1568384532.**-cb-kubecd-bdd-gh-1568384532-pr-1.35.240.94.226.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 1.189652786s
+Preview application is now available at: http://bdd-gh-1568384532.**-cb-kubecd-bdd-gh-1568384532-pr-1.35.240.94.226.nip.io
